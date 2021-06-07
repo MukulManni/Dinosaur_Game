@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: #444;
+}
+
+#start {
+    height: 40px;
+    width: 80px;
+    
+    position: absolute;
+    left: 220px;
+    top: 50px;
+    
+    font-weight: 600;
+}
+
+#screen {
+    height: 500px;
+    width: 550px;
+    background-color: grey;
+}
+
+#dino {
+    height: 60px;
+    width: 30px;
+    background-color: black;
+    
+    position: absolute;
+    top: 440px;
+    left: 50px;
+}
+
+.animate {
+    animation-name: jump;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+}
+
+#score {
+    position: absolute;
+    left: 227px;
+    top: 100px;
+    
+    font-family: cursive;
+}
+
+#block {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    
+    position: absolute;
+    top: 470px;
+    left: 520px;
+}
+
+.blockAnimate {
+    animation-name: block;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes block {
+    0% {left: 520px;}
+    100% {left: 0px;}
+}
+
+@keyframes jump {
+    0% {top: 440px;}
+    25% {top: 410px;}
+    50% {top: 380px;}
+    75% {top: 410px;}
+    100% {top: 440px;}
+}
